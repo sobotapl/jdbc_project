@@ -6,24 +6,18 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
-
 public class Main {
 
+    public static Scanner scanner  = new Scanner(System.in);
+    public static String response;
+
     public static void main(String[] args) {
-        Scanner scanner  = new Scanner(System.in);
-        String response;
+
         ContactDao contactDao = new ContactDaoImpl();
         List<Contact> contactList = new ArrayList<>();
 
         do {
-            System.out.println("Wpisz: ");
-            System.out.println("1 - aby dodać nowy kontakt");
-            System.out.println("2 - aby usunąć kontakt");
-            System.out.println("3 - aby wyświetlić wszystkie kontakty");
-            System.out.println("4 - aby wyswietlic imie i nazwisko po numerze");
-            System.out.println("5 - aby zapisać swoją liste do pliku");
-
-            System.out.print("Twój wybór: ");
+            printMenu();
             response = scanner.nextLine();
 
             switch (response){
@@ -65,15 +59,23 @@ public class Main {
                         contactList.add(contactModel);
 
                     }
-
                     System.out.println(Utils.dateGeneration());
                     Utils.saveToFileList(contactList);
                     break;
                 }
             }
-
         }while (!response.equals("exit"));
 
+    }
+    public static void printMenu(){
+        System.out.println("Wpisz: ");
+        System.out.println("1 - aby dodać nowy kontakt");
+        System.out.println("2 - aby usunąć kontakt");
+        System.out.println("3 - aby wyświetlić wszystkie kontakty");
+        System.out.println("4 - aby wyswietlic imie i nazwisko po numerze");
+        System.out.println("5 - aby zapisać swoją liste do pliku");
+
+        System.out.print("Twój wybór: ");
 
     }
 
