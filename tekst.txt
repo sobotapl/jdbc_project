@@ -1,0 +1,12 @@
+Contact{id=26, name='Piotr', age=33, city='Krakow', number=123456789}2020-12-02T18:14:38.479223
+Contact{id=29, name='magda', age=22, city='katowice', number=12345}2020-12-02T18:14:38.479223
+Contact{id=30, name='madzia', age=33, city='wilkosny', number=111222333}2020-12-02T18:14:38.479223
+Contact{id=31, name='magdalena', age=12, city='krakow', number=123456789}2020-12-02T18:14:38.479223
+Contact{id=32, name='ola', age=12, city='kalisz', number=1234}2020-12-02T18:14:38.479223
+Contact{id=33, name='koko', age=12, city='krakow', number=123321}2020-12-02T18:14:38.479223
+Contact{id=34, name='pawel', age=22, city='oslo', number=0}2020-12-02T18:14:38.479223
+Contact{id=35, name='ola', age=12, city='kokol', number=1111}2020-12-02T18:14:38.479223
+Contact{id=36, name='krzys', age=12, city='orki', number=123232}2020-12-02T18:14:38.479223
+Contact{id=37, name='kazu', age=12, city='daf', number=0}2020-12-02T18:14:38.479223
+Contact{id=38, name='we', age=12, city='fer', number=12}2020-12-02T18:14:38.480223700
+Contact{id=39, name='pio', age=90, city='kol', number=12}2020-12-02T18:14:38.480223700
